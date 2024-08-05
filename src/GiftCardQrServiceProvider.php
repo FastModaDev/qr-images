@@ -4,6 +4,7 @@ namespace FastModaDev\QrImages;
 
 use Illuminate\Support\ServiceProvider;
 use FastModaDev\QrImages\Console\Commands\InstallCommand;
+use FastModaDev\QrImages\Console\Commands\GiftCards;
 
 class GiftCardQrServiceProvider extends ServiceProvider
 {
@@ -21,7 +22,7 @@ class GiftCardQrServiceProvider extends ServiceProvider
    */
   public function boot(): void
   {
-    if ($this->app->runningInConsole())
+    if ( $this->app->runningInConsole() )
     {
       $this->commands([
         InstallCommand::class,

@@ -20,16 +20,12 @@ trait InstallsApiStack
         // Controllers...
         copy(__DIR__.'/../../../stubs/api/app/Http/Controllers/GiftCardManagementController.php', app_path('Models/GiftCardManagementController.php'));
 
-
         // Migrations...
         copy(__DIR__.'/../../../database/migrations/2024_08_03_011639_create_management_gift_cards_table.php', base_path('migrations/2024_08_05_000000_create_management_gift_cards_table.php'));
-
 
         // Routes...
         copy(__DIR__.'/../../../../stubs/api/routes/gift_card2.php', base_path('routes/gift_card2.php'));
         $this->installRoute();
-
-        
 
 
         $this->components->info('Notificaciones instalada OK.');

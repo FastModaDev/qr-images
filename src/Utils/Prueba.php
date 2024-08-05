@@ -1,6 +1,6 @@
 <?php
 
-namespace Johanncol\Notifications\Utils;
+namespace FastModaDev\QrImages\Utils;
 
 
 
@@ -12,7 +12,7 @@ class Prueba
    */
   public function handle()
   {
-    // $this->info("<bg=yellow;fg=black> JOHANN RAMÍREZ:: </> : 77777!");
+    // $this->info("<bg=yellow;fg=black> JOHANN RAMÍREZ:: </> : 77777!"); 
 
     return 'Hola mundo';
   }

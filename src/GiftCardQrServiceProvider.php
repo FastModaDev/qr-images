@@ -3,7 +3,7 @@
 namespace FastModaDev\QrImages;
 
 use Illuminate\Support\ServiceProvider;
-use Johanncol\Notifications\Console\Commands\InstallCommand;
+use FastModaDev\QrImages\Console\Commands\InstallCommand;
 
 class GiftCardQrServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class GiftCardQrServiceProvider extends ServiceProvider
    */
   public function register(): void
   {
-      //
+    
   }
 
   /**

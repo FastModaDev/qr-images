@@ -1,0 +1,34 @@
+{
+    "name": "fast-moda-dev/qr-images",
+    "version": "0.0.1",
+    "keywords": ["laravel", "vue" , "fast-moda" , "qr-images"],
+    "description": "Gerador de imagenes qr si códigos repetidos",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FastModaDev\\QrImages\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FastModaDev\\QrImages\\GiftCardQrServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Johann Ramírez",
+            "email": "johann.devfull@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    
+    "require": {
+        "endroid/qr-code": "^5.0"
+    }
+
+    
+}
+
